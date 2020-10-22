@@ -68,7 +68,8 @@ func init() {
 
 	// Enable Go module
 	os.Setenv("GO111MODULE", "on")
-	os.Setenv("GOPROXY", "direct")
+	os.Setenv("GOPROXY", "https://goproxy.cn,direct")
+	os.Setenv("GONOSUMDB", "git.tube")
 	os.Setenv("GOSUMDB", "off")
 
 	downloadRoot = getDownloadRoot()
